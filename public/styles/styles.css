@@ -1,7 +1,15 @@
+h1 {
+	font-size: 5em;
+}
+
 p {
 	font-size: 2em
 }
 
 .inline-element {
 	display: inline-block;
+}
+
+#city {
+	margin-top: 4em;
 }

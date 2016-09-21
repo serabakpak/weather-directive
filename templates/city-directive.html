@@ -1,15 +1,8 @@
-<div>
-
-
-<p class="inline-element">City: <input ng-model="cityCtrl.city"></p>
-<button class="btn btn-success inline-element" ng-click="cityCtrl.getWeather()">Get the Weather!</button>
-<p>Description: {{cityCtrl.data.weather[0].description}}</p>
-<p>Current Temp: {{cityCtrl.data.main.temp}}</p>
-<p>Highest Temp: {{cityCtrl.data.main.temp_max}}</p>
-<p>Lowest Temp: {{cityCtrl.data.main.temp_min}}</p>
-
-
-
-
-
+<div id="city">
+	<p class="inline-element">City: <input ng-model="cityCtrl.city"></p>
+	<button class="btn btn-success inline-element" ng-click="cityCtrl.getWeather()">Get the Weather!</button>
+	<p>Description: {{ cityCtrl.data.weather[0].description }}</p>
+	<p>Current Temp: {{ (cityCtrl.data.main.temp*(9/5)-459.67).toFixed(2) }}&deg;F</p>
+	<p>Highest Temp: {{ (cityCtrl.data.main.temp_max*(9/5)-459.67).toFixed(2) }}&deg;F</p>
+	<p>Lowest Temp: {{ (cityCtrl.data.main.temp_min*(9/5)-459.67).toFixed(2) }}&deg;F</p>
 </div>
